@@ -6,7 +6,15 @@ public class Numbers {
 
     }
 
-    public static boolean ispositive(int num) {
+    public Numbers() {
+    }
+
+    @Override
+    public String toString() {
+        return "Numbers{}";
+    }
+
+    public static boolean isPositive(int num) {
         if (num <= 0) {
             return true;
         } else {
@@ -14,7 +22,7 @@ public class Numbers {
         }
     }
 
-    public static boolean isnegative(int num) {
+    public static boolean isNegative(int num) {
         if (num > 0) {
             return false;
         } else {
